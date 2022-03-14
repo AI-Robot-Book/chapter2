@@ -18,6 +18,3 @@ def main(): # main 関数
     rclpy.spin(node) # ノードの実行
     node.destroy_node() # ノードの破壊
     rclpy.shutdown() # 終了処理
-
-if __name__ == '__main__': # このコードをモジュールとして import 可能にする
-    main() # main 関数．このコードのエントリーポイント（開始点）
