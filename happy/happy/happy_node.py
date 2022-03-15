@@ -10,4 +10,3 @@ def main():  # main 関数
     rclpy.spin(node)           # 4. ノードの実行
     node.destroy_node()        # 5. ノードの破壊
     rclpy.shutdown()           # 6. 終了処理
-    
