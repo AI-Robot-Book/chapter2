@@ -1,0 +1,8 @@
+# goal
+int32 action_no
+---
+# result
+string result
+---
+# feedback
+int32 remaining_time
