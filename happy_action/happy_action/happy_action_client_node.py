@@ -42,6 +42,3 @@ def main(args=None):
     action_client.send_goal(5)
     action_client.send_goal(7)
     rclpy.spin(action_client)
-
-if __name__ == '__main__':
-    main()
