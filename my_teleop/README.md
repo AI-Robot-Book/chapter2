@@ -1,2 +1,2 @@
 # my_teleop
-２章のサンプルコード teleopの自分版
+２章のサンプルコード teleopの自作版
