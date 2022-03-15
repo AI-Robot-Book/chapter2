@@ -5,7 +5,7 @@ def main(): # main 関数
     rclpy.init() # 初期化
     node = Node('hello_node') # ノードの生成 
 
-    while True: # 無限ループ
+    while rclpy.ok(): # CTRL+Cキーが押されるまで無限ループ
         print("hello world") # 端末に出力
 
     rclpy.spin(node) # ノードの実行
