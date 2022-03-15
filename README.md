@@ -5,7 +5,8 @@
 - **happy**: はじめてのROS2パッケージ （出村 公成）
 - **happy2**: happyパッケージの改良版 （出村 公成）
 - **happy_action**: action用のサンプルパッケージ （出村 公成）
-- **happy_interfaces**: happyのためのインタフェース定義 （出村 公成）
+- **happy_action_interfaces**: happy_action用のインタフェース定義 （出村 公成）
+- **happy_interfaces**: happy用のインタフェース定義 （出村 公成）
 - **happy_mini_turtlebot3_sim**: Happy Miniシミュレータ（出村 公成）
 - **happy_service**: service用のサンプルパッケージ （出村 公成）
 - **hello**: ros2 pkg createコマンドで自動生成されたパッケージ （出村 公成）
