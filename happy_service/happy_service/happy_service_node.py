@@ -17,6 +17,3 @@ def main(args=None):
     happy_service = HappyService()
     rclpy.spin(happy_service)
     rclpy.shutdown()
-
-if __name__ == '__main__':
-    main()
