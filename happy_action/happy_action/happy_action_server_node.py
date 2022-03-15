@@ -57,6 +57,3 @@ def main(args=None):
     rclpy.init(args=args)
     happy_action_server = HappyActionServer()
     rclpy.spin(happy_action_server)
-
-if __name__ == '__main__':
-    main()
