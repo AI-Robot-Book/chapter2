@@ -36,6 +36,3 @@ def main(args=None):
         
     happy_client.destroy_node()
     rclpy.shutdown()
-    
-if __name__ == '__main__':
-    main()
