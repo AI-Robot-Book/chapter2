@@ -12,12 +12,12 @@ class HappyNode4(Node):  # HappyNode4クラス
 
 
 def main():  # main 関数
-    print("Program start")
+    print("プログラム開始")
     rclpy.init()               # 2. 初期化
     node = HappyNode4()        # 3. ノードの生成
-    print("Create a node")
+    print("ノードの生成")
     rclpy.spin(node)           # 4. ノードの処理．コールバック関数を繰り返しよび出す．
     node.destroy_node()        # 5. ノードの破壊
-    print("Destory the node")
+    print("ノードの破壊")
     rclpy.shutdown()           # 6. 終了処理
-    print("Program end")
+    print("プログラム終了")
