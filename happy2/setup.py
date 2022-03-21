@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'happy_node2 = happy2.happy_node2:main'
+            'happy_node2 = happy2.happy_node2:main',
+            'happy_node3 = happy2.happy_node3:main',
         ],
     },
 )
