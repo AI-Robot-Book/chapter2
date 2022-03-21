@@ -16,7 +16,7 @@ def main():  # main 関数
     rclpy.init()               # 2. 初期化
     node = HappyNode3()        # 3. ノードの生成
     print("ノードの生成")
-    rclpy.spin_once(node)      # 4. ノードの処理．コールバック関数のよび出し
+    rclpy.spin_once(node)      # 4. ノードの処理．コールバック関数を1回だけよび出す．
     node.destroy_node()        # 5. ノードの破壊
     print("ノードの破壊")
     rclpy.shutdown()           # 6. 終了処理
