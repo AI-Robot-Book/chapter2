@@ -1,19 +1,19 @@
-import rclpy  # 1. ROS2 の Python モジュールをインポートする
+import rclpy  # 1. ROS2 Python モジュールのインポート
 from rclpy.node import Node  # rclpy.node モジュールから Node クラスをインポート
 
 
 class HappyNode(Node):
     def __init__(self):
-        super().__init__('happy_node2')
-        self.get_logger().info("happy world2")
+        super().__init__('happy_node2') # 基底クラスコンストラクタのよび出し
+        self.get_logger().info("happy world2") # ノードの処理
 
 
 def main():  # main 関数
-    print("Program start")
+    print("プログラム開始")
     rclpy.init()               # 2. 初期化
     node = HappyNode()         # 3. ノードの生成
-    print("Create a node")
+    print("ノードの生成")     
     node.destroy_node()        # 5. ノードの破壊
-    print("Destory the node")
+    print("ノードの破壊")
     rclpy.shutdown()           # 6. 終了処理
-    print("Program end")
+    print("プログラム終了")
