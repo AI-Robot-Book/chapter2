@@ -8,7 +8,7 @@ class HappyNode4(Node):  # HappyNode4クラス
         self.timer = self.create_timer(1.0, self.timer_callback)  # タイマーの生成
 
     def timer_callback(self):  # タイマーのコールバック関数
-        self.get_logger().info("happy world4")
+        self.get_logger().info("ハッピーワールド４")
 
 
 def main():  # main 関数
