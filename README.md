@@ -3,7 +3,6 @@
 
 - **airobot_interfaces**: 「AI Robot Book」のためのインタフェース定義 (升谷 保博) 
 - **happy**: はじめてのROS2パッケージ 
-- **happy2**: happyパッケージの改良版 
 - **happy_action**: action用のサンプルパッケージ 
 - **happy_action_interfaces**: happy_action用のインタフェース定義 
 - **happy_interfaces**: happy用のインタフェース定義 
