@@ -5,9 +5,9 @@ from rclpy.node import Node  # rclpy.node モジュールから Node クラス�
 class HappyNode3(Node):  # HappyNode3クラス
     def __init__(self):  # コンストラクタ
         super().__init__('happy_node3')  # 基底クラスコンストラクタのよび出し
-        self.timer = self.create_timer(1.0, self.timer_callback) # タイマーの生成
+        self.timer = self.create_timer(1.0, self.timer_callback)  # タイマーの生成
 
-    def timer_callback(self): # タイマーのコールバック関数
+    def timer_callback(self):  # タイマーのコールバック関数
         self.get_logger().info("ハッピーワールド３")
 
 

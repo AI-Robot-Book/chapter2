@@ -1,7 +1,7 @@
 import rclpy  # 1. ROS2 Python モジュールのインポート
 
 
-def print_happy(node): # 端末にハッピーワールドと表示
+def print_happy(node):  # 端末にハッピーワールドと表示
     node.get_logger().info("ハッピーワールド")
 
 

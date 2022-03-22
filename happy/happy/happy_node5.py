@@ -8,7 +8,7 @@ class HappyNode5(Node):  # HappyNode5クラス
         self.timer = self.create_timer(1.0, self.timer_callback)  # タイマーの生成
 
     def timer_callback(self):  # コールバック関数
-        self.get_logger().info("ハッピーワールド５") # 端末に表示
+        self.get_logger().info("ハッピーワールド５")  # 端末に表示
 
 
 def main():  # main 関数
@@ -19,7 +19,7 @@ def main():  # main 関数
     try:                        # 例外処理．美しく終わるため．
         # 4. ノードの処理．コールバック関数を繰り返しよび出す．
         #    Ctrl+Cが押されるまでプログラムはここでブロックされる．
-        rclpy.spin(node)        
+        rclpy.spin(node)
     except KeyboardInterrupt:
         print("Ctrl+Cが押されました．")
     finally:                       # 例外処理の終了時に常に行う処理
