@@ -18,7 +18,6 @@ def main():  # main 関数
     node = HappyNode5()         # 3. ノードの生成
     try:                        # 例外処理．美しく終わるため．
         # 4. ノードの処理．コールバック関数を繰り返しよび出す．
-        #    Ctrl+Cが押されるまでプログラムはここでブロックされる．
         rclpy.spin(node)
     except KeyboardInterrupt:
         print("Ctrl+Cが押されました．")
