@@ -26,4 +26,4 @@ def main():  # main 関数
         print("ノードの破壊")
         node.destroy_node()        # 5. ノードの破壊
         rclpy.shutdown()           # 6. 終了処理
-        print("プログラム終了")
+    print("プログラム終了")
