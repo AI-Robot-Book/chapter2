@@ -12,7 +12,7 @@ class HappyPublisher(Node):
                                             'topic', self.callback, 10)
 
     def callback(self, msg):  # コールバック関数
-        self.get_logger().info(f"Subscribe: {msg.data}")
+        self.get_logger().info(f"サブスクライブ: {msg.data}")
 
 
 def main(args=None):  # main¢p
