@@ -32,8 +32,8 @@ class TeleopPublisher(Node):  # キー操作により速度指令値をパブリ
             print("Input f, b, r, l : ")
 
         self.publisher.publish(self.vel)  # 速度指令メッセージのパブリッシュ
-        self.get_logger().info("Velocity: Linear=%f angular=%f"
-                               % (self.vel.linear.x, self.vel.angular.z))
+        self.get_logger().info(f"Velocity: Linear={self.vel.linear.x} \
+                               angular={self.vel.angular.z}")
 
 
 def main(args=None):  # main関数
