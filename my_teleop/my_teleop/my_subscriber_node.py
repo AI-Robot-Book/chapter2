@@ -13,8 +13,7 @@ class MySubscriber(Node):
                                                      self.callback, 10)
 
     def callback(self, Twist):  # コールバック関数．端末に並進と角速度を表示する
-        self.get_logger().info(f"Velocity: Linear={Twist.linear.x} \
-                               angular={Twist.angular.z}")
+        self.get_logger().info(f"並進速度={Twist.linear.x} 角速度={Twist.angular.z}")
 
 
 def main(args=None):  # main関数
