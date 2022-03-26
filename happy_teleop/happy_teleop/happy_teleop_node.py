@@ -11,10 +11,8 @@ class HappyTeleop(Node):  # キー操作により速度指令値をパブリッ�
         self.vel = Twist()  # Twist メッセージ型インスタンスの生成
         self.vel.linear.x = 0.0
         self.vel.angular.z = 0.0
-        print("Input f, b, r, l key, then press Enter key.")
 
     def timer_callback(self):  # タイマーのコールバック関数
-        key = input("f:forward, b:backward, r:right, l:left, s:stop <<")  # キーの取得
         # キーの値により並進速度や角速度を変更
         if key == 'f':
             self.vel.linear.x += 0.1
