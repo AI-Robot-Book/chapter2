@@ -29,7 +29,6 @@ class HappyTeleop(Node):  # キー操作により速度指令値をパブリッ�
             self.vel.angular.z = 0.0
         else:
             print("Input f, b, r, l : ")
-
         self.publisher.publish(self.vel)  # 速度指令メッセージのパブリッシュ
         self.get_logger().info(f"並進速度={self.vel.linear.x} 角速度={self.vel.angular.z}")
 
