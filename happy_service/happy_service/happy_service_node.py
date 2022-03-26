@@ -3,20 +3,27 @@ import rclpy
 from rclpy.node import Node
 
 
-class HappyService(Node):
+class HappyService(Node):  # ハッピーサービスクラス
     def __init__(self):
         super().__init__('happy_service')
-        self.srv = self.create_service(AddHappy, 'add_happy',
+        # サービスの生成
+        self.service = self.create_service(AddHappy, 'add_happy',
                                        self.add_happy_callback)
 
-    def add_happy_callback(self, request, response):
-        response.happy_word = 'Happy ' + request.word
-        self.get_logger().info('Incoming request\nword: %s' % (request.word))
+    def add_happy_callback(self, request, response):  # コールバック関数
+        response.happy_word = 'ハッピー' + request.word
+        self.get_logger().info(f"リクエストが来ます\言葉: %s' % (request.word))
         return response
 
 
-def main(args=None):
-    rclpy.init(args=args)
+def main(args=None):  # main関数
+    rclpy.init()
     happy_service = HappyService()
-    rclpy.spin(happy_service)
-    rclpy.shutdown()
+    try:
+        rclpy.spin(happy_service)
+    except KeyboardInterrupt:
+        print("Ctrl+CLが押されました．")
+    finally:
+        node.destroy_node()
+        rclpy.shutdown()
+    rclpy.shutdown()                         
