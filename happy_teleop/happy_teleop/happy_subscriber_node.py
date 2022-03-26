@@ -4,9 +4,9 @@ from geometry_msgs.msg import Twist
 
 
 # 速度指令値のトピック cmd_vel をサブスクライブして端末に表示するたけの簡単なクラス
-class MySubscriber(Node):
+class HappySubscriber(Node):
     def __init__(self):     # コンストラクタ
-        super().__init__('my_subscriber_node')
+        super().__init__('happy_subscriber_node')
 
         # サブスクライバの生成
         self.subscription = self.create_subscription(Twist, 'cmd_vel',
@@ -18,7 +18,7 @@ class MySubscriber(Node):
 
 def main(args=None):  # main関数
     rclpy.init()
-    node = MySubscriber()
+    node = HappySubscriber()
     try:
         rclpy.spin(node)
     except KeyboardInterrupt:

@@ -3,9 +3,9 @@ from rclpy.node import Node
 from geometry_msgs.msg import Twist  # Twist メッセージ型をインポート
 
 
-class TeleopPublisher(Node):  # キー操作により速度指令値をパブリッシュするクラス
+class HappyTeleop(Node):  # キー操作により速度指令値をパブリッシュするクラス
     def __init__(self):   # コンストラクタ
-        super().__init__('teleop_publisher_node')        
+        super().__init__('happy_teleop_node')        
         self.publisher = self.create_publisher(Twist, 'cmd_vel', 10)
         self.timer = self.create_timer(0.01, self.timer_callback)
         self.vel = Twist()  # Twist メッセージ型インスタンスの生成
@@ -37,7 +37,7 @@ class TeleopPublisher(Node):  # キー操作により速度指令値をパブリ
 
 def main(args=None):  # main関数
     rclpy.init()
-    node = TeleopPublisher()
+    node = HappyTeleop()
     try:
         rclpy.spin(node)
     except KeyboardInterrupt:

@@ -1,6 +1,6 @@
 from setuptools import setup
 
-package_name = 'my_teleop'
+package_name = 'happy_teleop'
 
 setup(
     name=package_name,
@@ -20,8 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'my_teleop_node = my_teleop.my_teleop_node:main',
-            'my_subscriber_node = my_teleop.my_subscriber_node:main',
+            'happy_teleop_node = happy_teleop.happy_teleop_node:main',
+            'happy_subscriber_node = happy_teleop.happy_subscriber_node:main',
         ],
     },
 )
