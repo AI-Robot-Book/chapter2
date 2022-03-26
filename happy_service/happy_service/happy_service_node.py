@@ -1,4 +1,4 @@
-from happy_interfaces.srv import AddHappy
+from happy_interfaces.srv import AddHappy # サービスファイルからAddHappy形をインポート
 import rclpy
 from rclpy.node import Node
 
@@ -6,7 +6,7 @@ from rclpy.node import Node
 class HappyService(Node):  # ハッピーサービスクラス
     def __init__(self):
         super().__init__('happy_service')
-        # サービスの生成
+        # サービスの生成（サービス型，サービス名, コールバック関数)
         self.service = self.create_service(AddHappy, 'add_happy',
                                        self.add_happy_callback)
 
