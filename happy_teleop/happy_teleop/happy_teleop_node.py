@@ -13,7 +13,7 @@ class HappyTeleop(Node):  # キー操作により速度指令値をパブリッ�
         self.vel.angular.z = 0.0
 
     def timer_callback(self):  # タイマーのコールバック関数
-        key = input("f, b, r, lキー入力 <<")  # キー取得
+        key = input("f, b, r, lキー入力後にEnterキーを押下 <<")  # キー取得
         # キーの値により並進速度や角速度を変更
         if key == 'f':
             self.vel.linear.x += 0.1
@@ -27,7 +27,6 @@ class HappyTeleop(Node):  # キー操作により速度指令値をパブリッ�
             self.vel.linear.x = 0.0
             self.vel.angular.z = 0.0
         else:
-            print("Input f, b, r, l : ")
         self.publisher.publish(self.vel)  # 速度指令メッセージのパブリッシュ
         self.get_logger().info(f"並進速度={self.vel.linear.x} 角速度={self.vel.angular.z}")
 
