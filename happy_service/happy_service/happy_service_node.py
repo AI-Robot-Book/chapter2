@@ -1,4 +1,4 @@
-from happy_interfaces.srv import AddHappy # サービスファイルからAddHappy形をインポート
+from happy_interfaces.srv import AddHappy # サービスファイルからAddHappy型をインポート
 import rclpy
 from rclpy.node import Node
 
