@@ -3,8 +3,7 @@ from rclpy.node import Node          # rclpy.nodeモジュールからNodeクラ
 from std_msgs.msg import String      # std_msgs.msgモジュールからStringクラスをインポート
 
 
-# ``Happy World"と表示するクラス
-class HappyPublisher(Node):
+class HappyPublisher(Node):  # "Happy World"とパブリッシュ並びに表示するクラス
     def __init__(self):  # コンストラクタ
         super().__init__('happy_publisher_node')
         self.pub = self.create_publisher(String, 'topic', 10)   # パブリッシャの生成
