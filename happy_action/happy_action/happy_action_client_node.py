@@ -19,21 +19,21 @@ class HappyActionClient(Node):
     def goal_response_callback(self, future):
         goal_handle = future.result()
         if not goal_handle.accepted:
-            self.get_logger().info("ゴールが拒否されました．")
+            self.get_logger().info('ゴールが拒否されました．')
             return
 
-        self.get_logger().info("ゴールが承認されました.")
+        self.get_logger().info('ゴールが承認されました.')
         self._get_result_future = goal_handle.get_result_async()
         self._get_result_future.add_done_callback(self.get_result_callback)
 
     def get_result_callback(self, future):
         result = future.result().result
-        self.get_logger().info("結果：{}".format(result.result))
+        self.get_logger().info(f'結果：{result.result}')
         # rclpy.shutdown()
         
     def feedback_callback(self, feedback_msg):
         feedback = feedback_msg.feedback
-        self.get_logger().info("フィードバックを受信：残り{}秒".format(feedback.remaining_time))
+        self.get_logger().info(f'フィードバックを受信：残り{feedback.remaining_time}秒')
 
 def main(args=None):
     rclpy.init(args=args)
