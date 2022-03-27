@@ -33,7 +33,7 @@ def main(args=None):
                 happy_client.get_logger().info(f"サービスのよび出しは失敗しました．{e}")
             else:
                 # 結果の表示
-                happy_client.get_logger().info(f"リクエスト:{happy_client.req.word}-> レスポンス: {response.happy_word}")
+                happy_client.get_logger().info(f"リクエスト:{happy_client.request.word}-> レスポンス: {response.happy_word}")
                 break        
     happy_client.destroy_node()
     rclpy.shutdown()
