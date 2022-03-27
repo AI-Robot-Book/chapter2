@@ -7,9 +7,9 @@ class HappyClient(Node):
     def __init__(self):
         super().__init__('happy_client_node')
         # クライアントの生成
-        self.cli = self.create_client(AddHappy, 'add_happy')
+        self.client = self.create_client(AddHappy, 'add_happy')
         # サービスが利用できるまで待機
-        while not self.cli.wait_for_service(timeout_sec=1.0):
+        while not self.client.wait_for_service(timeout_sec=1.0):
             self.get_logger().info('サービスは利用できません．待機中...')
         # リクエストのインスタンス生成
         self.request = AddHappy.Request()
@@ -18,12 +18,11 @@ class HappyClient(Node):
         # リクエストに値の代入
         self.request.word = str(sys.argv[1])
         # サービスのリクエスト
-        self.future = self.cli.call_async(self.request)
+        self.future = self.client.call_async(self.request)
 
 def main(args=None):
     rclpy.init(args=args)
     happy_client = HappyClient()
-    # リクエストの送信
     happy_client.send_request()
     while rclpy.ok():
         rclpy.spin_once(happy_client)
