@@ -11,7 +11,7 @@ class HappySubscriber(Node):
                                                      self.callback, 10)
 
     def callback(self, Twist):  # コールバック関数．端末に並進と角速度を表示する
-        self.get_logger().info(f"並進速度={Twist.linear.x} 角速度={Twist.angular.z}")
+        self.get_logger().info(f'並進速度={Twist.linear.x} 角速度={Twist.angular.z}')
 
 
 def main():  # main関数
@@ -20,7 +20,7 @@ def main():  # main関数
     try:
         rclpy.spin(node)
     except KeyboardInterrupt:
-        print("Ctrl+CLが押されました．")
+        print('Ctrl+CLが押されました．')
     finally:
         node.destroy_node()
         rclpy.shutdown()
