@@ -32,7 +32,7 @@ class HappyTeleop(Node):  # キー操作により速度指令値をパブリッ�
         self.get_logger().info(f"並進速度={self.vel.linear.x} 角速度={self.vel.angular.z}")
 
 
-def main(args=None):  # main関数
+def main():  # main関数
     rclpy.init()
     node = HappyTeleop()
     try:
