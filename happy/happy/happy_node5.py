@@ -13,7 +13,7 @@ class HappyNode5(Node):  # HappyNode5クラス
 
 
 def main():  # main 関数
-    print("プログラム開始")
+    print('プログラム開始')
     rclpy.init()                # 2. 初期化
     node = HappyNode5()         # 3. ノードの生成
     try:                        # 例外処理．美しく終わるため．
