@@ -9,7 +9,7 @@ class HappyNode5(Node):  # HappyNode5クラス
         self.timer = self.create_timer(1.0, self.timer_callback)  # タイマーの生成
 
     def timer_callback(self):  # コールバック関数
-        self.get_logger().info("ハッピーワールド５")  # 端末に表示
+        self.get_logger().info('ハッピーワールド５')  # 端末に表示
 
 
 def main():  # main 関数
@@ -20,9 +20,9 @@ def main():  # main 関数
         # 4. ノードの処理．コールバック関数を繰り返しよび出す．
         rclpy.spin(node)
     except KeyboardInterrupt:
-        print("Ctrl+Cが押されました．")
+        print('Ctrl+Cが押されました．')
     finally:                       # 例外処理の終了時に常に行う処理
-        print("ノードの破壊")
+        print('ノードの破壊')
         node.destroy_node()        # 5. ノードの破壊
         rclpy.shutdown()           # 6. 終了処理
-    print("プログラム終了")
+    print('プログラム終了')
