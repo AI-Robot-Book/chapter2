@@ -16,7 +16,7 @@ class HappyService(Node):  # ハッピーサービスクラス
         return response
 
 
-def main(args=None):  # main関数
+def main():  # main関数
     rclpy.init()
     happy_service = HappyService()
     try:
