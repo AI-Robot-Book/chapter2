@@ -26,7 +26,7 @@ def main(args=None):
     happy_client.send_request()
     while rclpy.ok():
         rclpy.spin_once(happy_client)
-        if happy_client.future.done(): # サービスの処理が終わったら
+        if happy_client.future.done(): # サービスの処理が終了したら
             try:
                 response = happy_client.future.result() # サービスの結果をレスポンスに代入
             except Exception as e:
