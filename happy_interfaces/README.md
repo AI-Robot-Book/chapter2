@@ -1,2 +1,2 @@
-# happy_interfaces
+# happy_service用のインタフェース定義
 2章のサンプルコード
