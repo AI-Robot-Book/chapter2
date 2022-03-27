@@ -13,7 +13,7 @@ class HappyTeleop(Node):  # キー操作により速度指令値をパブリッ�
         self.vel.angular.z = 0.0
 
     def timer_callback(self):  # タイマーのコールバック関数
-        key = input("f, b, r, lキー入力後にEnterキーを押下 <<")  # キー取得
+        key = input('f, b, r, lキー入力後にEnterキーを押下 <<')  # キー取得
         # キーの値により並進速度や角速度を変更
         if key == 'f':
             self.vel.linear.x += 0.1
@@ -38,7 +38,7 @@ def main():  # main関数
     try:
         rclpy.spin(node)
     except KeyboardInterrupt:
-        print('Ctrl+CLが押されました．')
+        print('Ctrl+Cが押されました．')
     finally:
         node.destroy_node()
         rclpy.shutdown()
