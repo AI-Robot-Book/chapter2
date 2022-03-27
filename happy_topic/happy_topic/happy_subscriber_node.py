@@ -12,7 +12,7 @@ class HappyPublisher(Node):
                                             'topic', self.callback, 10)
 
     def callback(self, msg):  # コールバック関数
-        self.get_logger().info(f"サブスクライブ: {msg.data}")
+        self.get_logger().info(f'サブスクライブ: {msg.data}')
 
 
 def main(args=None):  # main¢p
@@ -21,6 +21,6 @@ def main(args=None):  # main¢p
     try:
         rclpy.spin(node)
     except KeyboardInterrupt:
-        print("Ctrl+Cが押されました．")
+        print('Ctrl+Cが押されました．')
     finally:
         rclpy.shutdown()
