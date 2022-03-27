@@ -6,33 +6,36 @@ from happy_interfaces.srv import AddHappy
 class HappyClient(Node):
     def __init__(self):
         super().__init__('happy_client_node')
+        # クライアントの生成
         self.cli = self.create_client(AddHappy, 'add_happy')
+        # サービスが利用できるまで待機
         while not self.cli.wait_for_service(timeout_sec=1.0):
-            self.get_logger().info('service not available, waiting again...')
-
-        self.req = AddHappy.Request()
+            self.get_logger().info('サービスは利用できません．待機中...')
+        # リクエストのインスタンス生成
+        self.request = AddHappy.Request()
             
     def send_request(self):
-        self.req.word = str(sys.argv[1])
-        self.future = self.cli.call_async(self.req)
+        # リクエストに値の代入
+        self.request.word = str(sys.argv[1])
+        # サービスのリクエスト
+        self.future = self.cli.call_async(self.request)
 
 def main(args=None):
     rclpy.init(args=args)
     happy_client = HappyClient()
+    # リクエストの送信
     happy_client.send_request()
     while rclpy.ok():
         rclpy.spin_once(happy_client)
-        if happy_client.future.done():
+        if happy_client.future.done(): # サービスの処理が終わったら
             try:
-                response = happy_client.future.result()
+                response = happy_client.future.result() # サービスの結果をレスポンスに代入
             except Exception as e:
-                happy_client.get_logger().info(
-                    'Service call failed %r' % (e,))
+                happy_client.get_logger().info(f"サービスのよび出しは失敗しました．{e}")
             else:
-                happy_client.get_logger().info(
-                    'Reqest: %s -> Response: %s' %
-                    (happy_client.req.word, response.happy_word))
-            break
-        
+                # 結果の表示
+                happy_client.get_logger().info(　
+                    f"リクエスト: {happy_client.req.word} -> レスポンス: {response.happy_word}")
+                break        
     happy_client.destroy_node()
     rclpy.shutdown()
