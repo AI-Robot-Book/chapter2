@@ -14,7 +14,7 @@ class HappySubscriber(Node):
         self.get_logger().info(f"並進速度={Twist.linear.x} 角速度={Twist.angular.z}")
 
 
-def main(args=None):  # main関数
+def main():  # main関数
     rclpy.init()
     node = HappySubscriber()
     try:
