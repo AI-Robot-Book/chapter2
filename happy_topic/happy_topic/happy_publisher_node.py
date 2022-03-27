@@ -13,12 +13,12 @@ class HappyPublisher(Node):  # "Happy World"とパブリッシュ並びに表示
     def timer_callback(self):  # コールバック関数
         msg = String()
         if self.i > 0:
-            msg.data = f"ハッピーワールド{self.i}"
+            msg.data = f'ハッピーワールド{self.i}'
         else:
             msg.data = f"終わり"
             self.destroy_timer(self.timer)
         self.pub.publish(msg)
-        self.get_logger().info(f"パブリッシュ: {msg.data}")
+        self.get_logger().info(f'パブリッシュ: {msg.data}')
         self.i -= 1
 
 
@@ -28,7 +28,7 @@ def main(args=None):  # main関数
     try:
         rclpy.spin(node)
     except KeyboardInterrupt:
-        print("Ctrl+CLが押されました．")
+        print('Ctrl+Cが押されました．')
     finally:
         node.destroy_node()
         rclpy.shutdown()
