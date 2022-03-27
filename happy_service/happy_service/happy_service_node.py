@@ -12,7 +12,7 @@ class HappyService(Node):  # ハッピーサービスクラス
 
     def add_happy_callback(self, request, response):  # コールバック関数
         response.happy_word = 'ハッピー' + request.word
-        self.get_logger().info(f"リクエストが来ます\言葉: %s' % (request.word))
+        self.get_logger().info(f"リクエストが来ます．言葉: {request.word}")
         return response
 
 
