@@ -27,9 +27,9 @@ class HappyTeleop(Node):  # キー操作により速度指令値をパブリッ�
             self.vel.linear.x = 0.0
             self.vel.angular.z = 0.0
         else:
-            print("入力キーが違います．")
+            print('入力キーが違います．')
         self.publisher.publish(self.vel)  # 速度指令メッセージのパブリッシュ
-        self.get_logger().info(f"並進速度={self.vel.linear.x} 角速度={self.vel.angular.z}")
+        self.get_logger().info(f'並進速度={self.vel.linear.x} 角速度={self.vel.angular.z}')
 
 
 def main():  # main関数
@@ -38,7 +38,7 @@ def main():  # main関数
     try:
         rclpy.spin(node)
     except KeyboardInterrupt:
-        print("Ctrl+CLが押されました．")
+        print('Ctrl+CLが押されました．')
     finally:
         node.destroy_node()
         rclpy.shutdown()
