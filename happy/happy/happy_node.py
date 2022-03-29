@@ -2,7 +2,7 @@ import rclpy  # 1. ROS2 Python モジュールのインポート
 from rclpy.node import Node  # rclpy.node モジュールから Node クラスをインポート
 
 
-class HappyNode(Node):  # HappyNode2クラス
+class HappyNode(Node):  # HappyNodeクラス
     def __init__(self):
         print('ノードの生成')
         super().__init__('happy_node')  # 基底クラスコンストラクタのよび出し
