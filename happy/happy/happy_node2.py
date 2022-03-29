@@ -13,7 +13,5 @@ def main():  # main 関数
     print('プログラム開始')
     rclpy.init()               # 2. 初期化
     node = HappyNode2()        # 3. ノードの生成
-    print('ノードの破壊')
-    node.destroy_node()        # 5. ノードの破壊
-    rclpy.shutdown()           # 6. 終了処理
+    rclpy.shutdown()           # 5. 終了処理
     print('プログラム終了')
