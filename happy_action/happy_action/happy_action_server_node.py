@@ -52,7 +52,12 @@ class HappyActionServer(Node):
 
         return result 
 
-def main(args=None):
-    rclpy.init(args=args)
+def main():
+    rclpy.init()
     happy_action_server = HappyActionServer()
-    rclpy.spin(happy_action_server)
+    try:
+        rclpy.spin(happy_action_server)
+    except KeyBoardInterrupt:
+        pass
+    finally:
+        rclpy.shutdown()
