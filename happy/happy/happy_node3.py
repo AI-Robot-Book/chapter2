@@ -16,9 +16,8 @@ def main():  # main 関数
     print('プログラム開始')
     rclpy.init()                # 2. 初期化
     node = HappyNode3()         # 3. ノードの生成
-    try:                        # 例外処理．美しく終わるため．
-        # 4. ノードの処理．コールバック関数を繰り返しよび出す．
-        rclpy.spin(node)
+    try:                        # 例外処理．美しく終わるため．       
+        rclpy.spin(node)        # 4. ノードの処理．コールバック関数を繰り返しよび出す．
     except KeyboardInterrupt:
         print('Ctrl+Cが押されました．')
     rclpy.shutdown()             # 5. 終了処理
