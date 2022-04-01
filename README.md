@@ -2,6 +2,7 @@
 「AI Robot Book」第2章のサポート情報．作成中．．．
 
 - **airobot_interfaces**: 「AI Robot Book」のためのインタフェース定義 (升谷 保博) 
+- **bringme_service**: airobot_interfacesを使ったサンプルパッケージ 
 - **happy**: はじめてのROS2パッケージ 
 - **happy_action**: action用のサンプルパッケージ 
 - **happy_action_interfaces**: happy_action用のインタフェース定義 
