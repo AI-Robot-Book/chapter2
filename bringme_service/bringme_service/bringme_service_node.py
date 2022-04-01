@@ -23,9 +23,9 @@ class BringmeService(Node):  # ハッピーサービスクラス
 
 def main():  # main関数
     rclpy.init()
-    bringme_service = BringmeService()
+    node = BringmeService()
     try:
-        rclpy.spin(bringme_service)
+        rclpy.spin(node)
     except KeyboardInterrupt:
         print("Ctrl+CLが押されました．")
     finally:
