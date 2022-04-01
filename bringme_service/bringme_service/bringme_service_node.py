@@ -10,7 +10,7 @@ class BringmeService(Node):  # ハッピーサービスクラス
         # サービスの生成（サービス型，サービス名, コールバック関数)
         self.service = self.create_service(StringCommand, 'command',
                                            self.callback)
-        self.food   = ['りんご', 'バナナ', 'キャンディ']   
+        self.food = ['apple', 'banana', 'candy']   
 
     def callback(self, request, response):  # コールバック関数
         self.get_logger().info(f"リクエストが来ます．ワード: {request.command}")

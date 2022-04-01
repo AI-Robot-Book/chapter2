@@ -1,4 +1,3 @@
-import sys
 import rclpy
 from rclpy.node import Node
 from airobot_interfaces.srv import StringCommand
@@ -25,12 +24,12 @@ class BringmeClient(Node):
 def main(args=None):
     rclpy.init(args=args)
     node = BringmeClient()
-    order = sys.argv[1]
+    order = input('何を取ってきますか：')
     node.send_request(order)
 
     while rclpy.ok():
         rclpy.spin_once(node)
-           
+
         if node.future.done():  # サービスの処理が終了したら
             try:
                 response = node.future.result()  # サービスの結果をレスポンスに代入                  
@@ -39,7 +38,7 @@ def main(args=None):
             else:
                 # 結果の表示
                 node.get_logger().info(
-                    f"リクエスト:{node.request.command}-> レスポンス: {response.answer}")
-                break 
+                    f"\nリクエスト:{node.request.command} -> レスポンス: {response.answer}")
+                break
   
     rclpy.shutdown()
