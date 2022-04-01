@@ -12,7 +12,7 @@ class BringmeService(Node):  # ハッピーサービスクラス
         self.food = ['apple', 'banana', 'candy']   
 
     def callback(self, request, response):  # コールバック関数
-        time.sleep(10)
+        time.sleep(5)
         for item in self.food:
             if item in request.command:
                 response.answer = 'はい，これです．'
