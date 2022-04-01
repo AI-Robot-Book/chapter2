@@ -11,6 +11,6 @@ ros2 run bringme_service bringme_service_node
 ros2 run bringme_service bringme_client_node
 何をとってきますか：
 ```
-と聞かれるので，取ってきて欲しい英単語を入力する．
+と聞かれるので，取ってきて欲しい英単語を入力する．  
 'apple', 'banana', 'candy'を入力すると"はい，これです．”とレスポンスが返る，  
 それ以外は"見つけることができませんでした．”とレスポンスが返る．
