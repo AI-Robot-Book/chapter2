@@ -24,10 +24,10 @@ class HappyPubSub(Node):
 
     def callback(self, sub_msg):
         pub_msg = String()
-        self.get_logger().info(f'Subscribe:{sub_msg.data}')
+        self.get_logger().info(f'サブスクライブ:{sub_msg.data}')
         pub_msg.data = self.happy_actions[sub_msg.data % 10 + 1]
         self.pub.publish(pub_msg)
-        self.get_logger().info(f'Publish: {pub_msg.data}')
+        self.get_logger().info(f'パブリッシュ: {pub_msg.data}')
 
 
 def main():
