@@ -1,8 +1,7 @@
+import time
 import rclpy
 from rclpy.node import Node
 from airobot_interfaces.srv import StringCommand
-import time
-
 
 class BringmeService(Node):  # ハッピーサービスクラス
     def __init__(self):  # コンストラクタ
