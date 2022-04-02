@@ -9,7 +9,6 @@
 - **happy_interfaces**: happy用のインタフェース定義 
 - **happy_mini_turtlebot3_sim**: Happy Miniシミュレータ
 - **happy_service**: service用のサンプルパッケージ 
-- **happy_teleop**: teleopの自作版パッケージ 
 - **happy_topic**: topic用のサンプルパッケージ
 - **hello**: ros2 pkg createコマンドで自動生成されたパッケージ 
 - **turtlesim_launch**: タートルシム用のローンチファイル 
