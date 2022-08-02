@@ -1,5 +1,5 @@
 # 第２章　はじめてのROS2
-作成中．．．
+ディレクトリの説明．作成中．．．
 
 - **airobot_interfaces**: 「AI Robot Book」のためのインタフェース定義 (升谷 保博) 
 - **bringme_service**: airobot_interfacesを使ったサンプルパッケージ 
