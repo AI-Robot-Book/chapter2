@@ -8,12 +8,12 @@ airobot_interfacesを使ったサンプルパッケージ
 インストール方法を書く．
 
 ## 実行  
-### 端末を２つに分割する．
-### 1番目の端末で次のコマンドを実行する．  
+- 端末を２つに分割する．
+- 1番目の端末で次のコマンドを実行する．  
 ```
 ros2 run bringme_service bringme_service_node  
 ```
-### 2番目の端末で次のコマンドを実行する．
+- 2番目の端末で次のコマンドを実行する．
 ```
 ros2 run bringme_service bringme_client_node
 何をとってきますか：
