@@ -4,7 +4,13 @@
 
 
 ## インストール
-インストール方法を書く．
+ROSのワークスペースを~/airobot_wsとする．
+
+cd ~/airobot_ws/src
+このパッケージを含むリポジトリを入手
+
+git clone https://github.com/AI-Robot-Book/chapter
+
 
 ## 実行  
 
