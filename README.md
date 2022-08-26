@@ -15,4 +15,16 @@ ROS2とPythonで作って学ぶAIロボット入門（出村・萩原・升谷�
 - **hello**: ros2 pkg createコマンドで自動生成されたパッケージ 
 - **turtlesim_launch**: タートルシム用のローンチファイル 
 
+## インストール
+Chapter2の全パッケージをインストールします．
+- ROSのワークスペースを`~/airobot_ws`とする．
+  ```
+  cd ~/airobot_ws/src
+  ```
+
+- Chapter2のリポジトリを入手
+  ```
+  git clone https://github.com/AI-Robot-Book/chapter2
+  ```
+
 ## 補足情報
