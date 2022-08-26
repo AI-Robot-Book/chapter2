@@ -4,12 +4,21 @@
 
 
 ## インストール
-ROSのワークスペースを~/airobot_wsとする．
+- ROSのワークスペースを`~/airobot_ws`とする．
+  ```
+  cd ~/airobot_ws/src
+  ```
 
-cd ~/airobot_ws/src
-このパッケージを含むリポジトリを入手
+- このパッケージを含むリポジトリを入手
+  ```
+  git clone https://github.com/AI-Robot-Book/chapter2
+  ```
 
-git clone https://github.com/AI-Robot-Book/chapter
+- パッケージのビルド
+  ```
+  cd ~/airobot_ws
+  colcon build 
+  ```
 
 
 ## 実行  
