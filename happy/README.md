@@ -17,7 +17,7 @@
 - パッケージのビルド
   ```
   cd ~/airobot_ws
-  colcon build 
+  colcon build --packages-select happy
   ```
 
 
