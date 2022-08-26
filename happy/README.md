@@ -13,7 +13,7 @@ Chapter2の全パッケージは入手済みなのでパッケージをビルド
 
 
 ## 実行  
-端末で以下を実行
+端末で以下のコマンドを実行
 ```
 source install/setup.bash
 ros2 run happy happy_node
