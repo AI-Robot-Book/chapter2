@@ -16,7 +16,7 @@ ROS2とPythonで作って学ぶAIロボット入門（出村・萩原・升谷�
 - **turtlesim_launch**: タートルシム用のローンチファイル 
 
 ## インストール
-Chapter2の全パッケージをインストールします．
+Chapter2の全パッケージを以下のコマンドでインストールします．
 - ROSのワークスペースを`~/airobot_ws`とする．
   ```
   cd ~/airobot_ws/src
