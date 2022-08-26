@@ -12,7 +12,8 @@ ROS2とPythonで作って学ぶAIロボット入門（出村・萩原・升谷�
 - **happy_mini_turtlebot3_sim**: Happy Miniシミュレータ
 - **happy_service**: service用のサンプルパッケージ 
 - **happy_topic**: topic用のサンプルパッケージ
-- **hello**: ros2 pkg createコマンドで自動生成されたパッケージ 
+- **hello**: ros2 pkg createコマンドで自動生成されたパッケー
+- **map**: 地図ファイルを格納するディレクトリ
 - **turtlesim_launch**: タートルシム用のローンチファイル 
 
 ## インストール
