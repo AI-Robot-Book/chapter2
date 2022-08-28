@@ -5,8 +5,9 @@ airobot_interfacesを使ったサンプルパッケージ
 
 
 ## インストール
+Chapter2のパッケージは全部まとめてインストール・ビルドをします．
+- [第2章 インストール](https://github.com/AI-Robot-Book/chapter2)を参照してください．
 
-インストール方法を書く．
 
 ## 実行  
 - 端末を２つに分割する．
@@ -25,7 +26,7 @@ ros2 run bringme_service bringme_client_node
 
 
 ## ヘルプ
-トラブルシュートや気を付けたいことなどを書く．
+．
 　
  
 ## 著者
@@ -33,9 +34,7 @@ ros2 run bringme_service bringme_client_node
 
 
 ## 履歴
-バグフィクスやチェンジログ
-- 2022-08-23: READMEの修正
-- 2022-03-15: 初期版
+- 2022-08-29: 初期版
 
 
 ## ライセンス
