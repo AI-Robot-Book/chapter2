@@ -29,9 +29,11 @@ Chapter2の全パッケージを以下のコマンドでインストールしま
   ```
   
 - パッケージのビルド   
-　```
-  cd ~/airobot_ws
+  ```
+  cd ~/airobot_ws  
   colcon build
   ```
+
+
 
 ## 補足情報
