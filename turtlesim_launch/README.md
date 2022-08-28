@@ -8,7 +8,7 @@
 ## 実行  
 - 次のコマンドでturtlesimのlaunchディレクトリにコピーして使う．  
 ```
-$ cp ./mysim.lauch.py /opt/ros/foxy/share/trutlesim/launch
+sudo cp ./mysim.lauch.py /opt/ros/foxy/share/turtlesim/launch
 ```
 
 ## ヘルプ
