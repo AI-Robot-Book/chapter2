@@ -4,12 +4,8 @@
 
 
 ## インストール
-Chapter2の全パッケージは入手済みなのでパッケージをビルドするだけ．
-- パッケージのビルド
-  ```
-  cd ~/airobot_ws
-  colcon build --packages-select happy
-  ```
+Chapter2のパッケージは全部まとめてインストール・ビルドをします．
+- [第2章 インストール](https://github.com/AI-Robot-Book/chapter2)を参照してください．
 
 
 ## 実行  
