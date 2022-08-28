@@ -16,7 +16,7 @@ ros2 run happy happy_node
 ```
 
 ## ヘルプ
-- 今のところなし．
+- 今のところありません．
 　
  
 ## 著者
@@ -32,4 +32,4 @@ Copyright (c) 2022, Kosei Demura All rights reserved. This project is licensed u
 
 
 ## 参考文献
-- 今のところなし．
+- 今のところありません．
