@@ -26,7 +26,7 @@ ros2 run bringme_service bringme_client_node
 
 
 ## ヘルプ
-．
+- 今のところなし．
 　
  
 ## 著者
