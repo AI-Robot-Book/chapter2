@@ -6,7 +6,17 @@
   - [StringCommand.srv](srv/StringCommand.srv)
 
 
+
+## インストール
+Chapter2のパッケージは全部まとめてインストール・ビルドをします．
+- [第2章 インストール](https://github.com/AI-Robot-Book/chapter2)を参照してください．
+
+## 実行  
+- インタフェースの定義なので実行方法はありません．
+
+
 ## ヘルプ
+- 今のところありません．
 
 
 ## 著者
@@ -19,3 +29,4 @@
 Copyright (c) 2022, MASUTANI Yasuhiro All rights reserved. This project is licensed under the Apache License 2.0 license found in the LICENSE file in the root directory of this project.
 
 ## 参考文献
+- 今のところありません．
