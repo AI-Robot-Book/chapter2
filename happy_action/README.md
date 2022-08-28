@@ -24,7 +24,7 @@ ros2 run happy_action happy_action_client_node
 ```
 
 ## ヘルプ
-- 今のところなし．
+- 今のところありません．
 　
  
 ## 著者
@@ -32,7 +32,6 @@ ros2 run happy_action happy_action_client_node
 
 
 ## 履歴
-バグフィクスやチェンジログ
 - 2022-08-29: 初期版
 
 
@@ -41,5 +40,5 @@ Copyright (c) 2022, Kosei Demura All rights reserved. This project is licensed u
 
 
 ## 参考文献
-- 今のところなし．
+- 今のところありません．
 
