@@ -28,7 +28,7 @@ Chapter2の全パッケージを以下のコマンドでインストールしま
   git clone https://github.com/AI-Robot-Book/chapter2
   ```
   
-- パッケージのビルド  
+- パッケージのビルド   
 　```
   cd ~/airobot_ws
   colcon build
