@@ -24,13 +24,11 @@ ros2 run happy happy_node
 
 
 ## 履歴
-バグフィクスやチェンジログ
-- 2022-08-23: READMEの修正
-- 2022-03-15: 初期版
+- 2022-08-29: 初期版
 
 
 ## ライセンス
-Apach 2.0 
+Copyright (c) 2022, Kosei Demura All rights reserved. This project is licensed under the Apache License 2.0 license found in the LICENSE file in the root directory of this project.
 
 
 ## 参考文献
