@@ -24,7 +24,7 @@ ros2 run happy_action happy_action_client_node
 ```
 
 ## ヘルプ
-トラブルシュートや気を付けたいことなどを書く．
+- 今のところなし．
 　
  
 ## 著者
@@ -33,8 +33,7 @@ ros2 run happy_action happy_action_client_node
 
 ## 履歴
 バグフィクスやチェンジログ
-- 2022-08-23: READMEの修正
-- 2022-03-15: 初期版
+- 2022-08-29: 初期版
 
 
 ## ライセンス
