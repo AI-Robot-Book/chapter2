@@ -4,13 +4,15 @@ happy_service用のインタフェース定義
 
 
 ## インストール
-インストール方法を書く．
+Chapter2のパッケージは全部まとめてインストール・ビルドをします．
+- [第2章 インストール](https://github.com/AI-Robot-Book/chapter2)を参照してください．
+
 
 ## 実行  
-
+- インタフェースの定義なので実行方法はありません．
 
 ## ヘルプ
-トラブルシュートや気を付けたいことなどを書く．
+- 今のところありません．
 　
  
 ## 著者
@@ -18,15 +20,13 @@ happy_service用のインタフェース定義
 
 
 ## 履歴
-バグフィクスやチェンジログ
-- 2022-08-23: READMEの修正
-- 2022-03-15: 初期版
+- 2022-08-29: 初期版
 
 
 ## ライセンス
-Apach 2.0 
+Copyright (c) 2022, Kosei Demura All rights reserved. This project is licensed under the Apache License 2.0 license found in the LICENSE file in the root directory of this project.
 
 
 ## 参考文献
-- 今のところなし．
+- 今のところありません．
 
