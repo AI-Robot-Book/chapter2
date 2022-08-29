@@ -11,6 +11,7 @@ Chapter2のパッケージは全部まとめてインストール・ビルドを
 ## 実行  
 端末で以下のコマンドを実行
 ```
+cd ~/airobot_ws
 source install/setup.bash
 ros2 run happy happy_node
 ```
