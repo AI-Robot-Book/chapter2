@@ -5,7 +5,7 @@
   <version>0.0.0</version>
   <description>A simple service package</description>
   <maintainer email="ai-robot-book@googlegroups.com">Kosei Demura</maintainer>
-  <license>TODO: License declaration</license>
+  <license>Apache License 2.0</license>
 
   <depend>rclpy</depend>
   <depend>happy_interfaces</depend>
