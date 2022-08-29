@@ -8,12 +8,22 @@ Chapter2のパッケージは全部まとめてインストール・ビルドを
 - [第2章 インストール](https://github.com/AI-Robot-Book/chapter2)を参照してください．
 
 ## 実行  
-端末で以下のコマンドを実行
+- 端末を2分割して，上の端末で以下のコマンドを実行
 ```
 cd ~/airobot_ws
 source install/setup.bash
-ros2 run happy happy_node
+ros2 run bringme_service bringme_service_node
 ```
+
+- 下の端末で以下のコマンドを実行
+```
+cd ~/airobot_ws
+source install/setup.bash
+ros2 run bringme_service bringme_client_node
+```
+
+
+
 
 ## ヘルプ
 - 今のところありません．
