@@ -2,10 +2,11 @@
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
   <name>happy_pub_sub</name>
-  <version>0.0.0</version>
-  <description>TODO: Package description</description>
-  <maintainer email="tenkose@hotmail.com">ubuntu</maintainer>
-  <license>TODO: License declaration</license>
+  <version>1.0.0</version>
+  <description>A happy pub sub package</description>
+  <maintainer email="ai-robot-book@googlegroups.com">Kosei Demura</maintainer>
+  <license>Apache License 2.0</license>
+
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>
