@@ -9,7 +9,6 @@ ROS2とPythonで作って学ぶAIロボット入門（出村・萩原・升谷�
 - **[happy_action](happy_action)**: action用のサンプルパッケージ 
 - **[happy_action_interfaces](happy_action_interfaces)**: happy_action用のインタフェース定義 
 - **[happy_interfaces](happy_interfaces)**: happy用のインタフェース定義 
-- **[happy_mini_turtlebot3_sim](happy_mini_turtlebot3_sim)**: Happy Miniシミュレータ
 - **[happy_service](happy_service)**: service用のサンプルパッケージ 
 - **[happy_topic](happy_topic)**: topic用のサンプルパッケージ
 - **[hello](hello)**: ros2 pkg createコマンドで自動生成されたパッケージ
