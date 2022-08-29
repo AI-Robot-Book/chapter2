@@ -3,7 +3,7 @@
 ROS2とPythonで作って学ぶAIロボット入門（出村・萩原・升谷・タン著，講談社）第２章のサンプルプログラムと補足情報などを掲載しています．
 
 ## ディレクトリ構成
-- **airobot_interfaces**: 「AI Robot Book」のためのインタフェース定義 (升谷 保博) 
+- **[airobot_interfaces](airobot_interface)**: 「AI Robot Book」のためのインタフェース定義 (升谷 保博) 
 - **bringme_service**: airobot_interfacesを使ったサンプルパッケージ 
 - **happy**: はじめてのROS2パッケージ 
 - **happy_action**: action用のサンプルパッケージ 
