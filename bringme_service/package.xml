@@ -3,8 +3,8 @@
 <package format="3">
   <name>bringme_service</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
-  <maintainer email="mini@mail.domain">mini</maintainer>
+  <description>A simple service package</description>
+  <maintainer email="ai-robot-book@googlegroups.com">Kosei Demura</maintainer>
   <license>TODO: License declaration</license>
 
   <depend>rclpy</depend>
