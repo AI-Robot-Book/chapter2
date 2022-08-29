@@ -22,7 +22,7 @@ ros2 run hello hello_node
  
 ## 著者
 ros2 pkg createコマンドで自動生成されたパッケージなので，以下のサイトを参照してください．
-
+- [ROS2](https://github.com/ros2)
 
 ## 履歴
 - 2022-08-29: 初期版
@@ -30,6 +30,7 @@ ros2 pkg createコマンドで自動生成されたパッケージなので，�
 
 ## ライセンス
 ros2 pkg createコマンドで自動生成されたパッケージなので，以下のサイトを参照してください．
+- [ROS2](https://github.com/ros2)
 
 
 ## 参考文献
