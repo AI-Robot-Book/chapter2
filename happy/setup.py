@@ -16,7 +16,7 @@ setup(
     maintainer='Kosei Demura',
     maintainer_email='ai-robot-book@googlegroups.com',
     description='A happy package',
-    license='Apache License 2.0',
+    license='Apache License 2.0', 
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
