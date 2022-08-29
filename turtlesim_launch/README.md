@@ -1,18 +1,22 @@
 # turtlesim_launch
-** 概要
+## 概要
 ２章のturtlesim用ローンチファイル
 
 ## インストール
-インストール方法を書く．
-
-## 実行  
-- 次のコマンドでturtlesimのlaunchディレクトリにコピーして使う．  
+- 端末で次のコマンドを実行してください．  
 ```
+cd ~/airobot_ws/src/chapter2/turtlesim_launch
 sudo cp ./mysim.launch.py /opt/ros/foxy/share/turtlesim/launch
 ```
 
+## 実行  
+- 端末で次のコマンドを実行してください．  
+```
+ros2 launch turtlesim mysim.launch.py
+```
+
 ## ヘルプ
-トラブルシュートや気を付けたいことなどを書く．
+- 今のところありません．
 　
  
 ## 著者
@@ -20,14 +24,11 @@ sudo cp ./mysim.launch.py /opt/ros/foxy/share/turtlesim/launch
 
 
 ## 履歴
-バグフィクスやチェンジログ
-- 2022-08-23: READMEの修正
-- 2022-03-15: 初期版
+- 2022-08-29: 初期版
 
 
 ## ライセンス
-Apach 2.0 
-
+Copyright (c) 2022, Kosei Demura All rights reserved. This project is licensed under the Apache License 2.0 license found in the LICENSE file in the root directory of this project.
 
 ## 参考文献
-- 今のところなし．
+- 今のところありません．
