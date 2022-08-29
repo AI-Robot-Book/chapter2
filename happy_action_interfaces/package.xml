@@ -3,7 +3,7 @@
 <package format="3">
   <name>happy_action_interfaces</name>
   <version>1.0.0</version>
-  <description>A happy action interfaces</description>
+  <description>A happy action interfaces package</description>
   <maintainer email="ai-robot-book@googlegroups.com">Kosei Demura</maintainer>
   <license>Apache License 2.0</license>
   
