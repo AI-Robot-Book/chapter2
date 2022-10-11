@@ -1,8 +1,8 @@
 # happy_topic
 ## 概要
 ２章のサンプルプログラム．topic通信．
-- happy_topic/src/happy_topic_publisher.py (プログラムリスト2.6)
-- happy_topic/src/happy_topic_publisher.py (プログラムリスト2.7)
+- happy_topic/happy_publisher_node.py  (プログラムリスト2.6)
+- happy_topic/happy_subscriber_node.py (プログラムリスト2.7)
 
 
 ## インストール
