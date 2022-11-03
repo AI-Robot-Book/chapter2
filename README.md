@@ -5,19 +5,19 @@ ROS2とPythonで作って学ぶAIロボット入門（出村・萩原・升谷�
 ## ディレクトリ構成
 - **[airobot_interfaces](airobot_interfaces)**: 「AI Robot Book」のためのインタフェース定義 （プログラムリスト2.12, 2.15,2.16）(升谷 保博) 
 - **[bringme_service](bringme_service)**: airobot_interfacesを使ったサンプルパッケージ （プログラムリスト2.13, 2.14, 2.17）
-- **[happy](happy)**: はじめてのROS2パッケージ （プログラムリスト2.1, 2.2, 2.4, 2.5, 2.6）
+- **[happy](happy)**: はじめてのROS2パッケージ （プログラムリスト2.4, 2.5, 2.6）
 - **[happy_action](happy_action)**: action用のサンプルパッケージ 
 - **[happy_action_interfaces](happy_action_interfaces)**: happy_action用のインタフェース定義 
 - **[happy_interfaces](happy_interfaces)**: happy用のインタフェース定義 
 - **[happy_pub_sub](happy_pub_sub)**: topic用のサンプルパッケージ（プログラムリスト2.11） 
 - **[happy_service](happy_service)**: service用のサンプルパッケージ 
 - **[happy_topic](happy_topic)**: topic用のサンプルパッケージ（プログラムリスト2.7, 2.8, 2.9, 2.10）
-- **[hello](hello)**: ros2 pkg createコマンドで自動生成されたパッケージ（プログラムリスト2.3）
+- **[hello](hello)**: ros2 pkg createコマンドで自動生成されたパッケージ（プログラムリスト2.1, 2.2, 2.3）
 - **[turtlesim_launch](turtlesim_launch)**: タートルシム用のローンチファイル 
 
 ## サンプルプログラム一覧
-- プログラムリスト2.1 [package.xml](https://github.com/AI-Robot-Book/chapter2/blob/master/happy/package.xml)
-- プログラムリスト2.2 [setup.py](https://github.com/AI-Robot-Book/chapter2/blob/master/happy/setup.py)
+- プログラムリスト2.1 [package.xml](https://github.com/AI-Robot-Book/chapter2/blob/master/hello/package.xml)
+- プログラムリスト2.2 [setup.py](https://github.com/AI-Robot-Book/chapter2/blob/master/hello/setup.py)
 - プログラムリスト2.3 [hello_node.py](https://github.com/AI-Robot-Book/chapter2/blob/master/hello/hello/hello_node.py)
 - プログラムリスト2.4 [happy_node.py](https://github.com/AI-Robot-Book/chapter2/blob/master/happy/happy/happy_node.py)
 - プログラムリスト2.5 [happy_node2.py](https://github.com/AI-Robot-Book/chapter2/blob/master/happy/happy/happy_node2.py)
