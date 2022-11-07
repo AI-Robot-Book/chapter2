@@ -4,7 +4,7 @@ from std_msgs.msg import String
 
 
 # Sring型メッセージをサブスクライブして端末に表示するだけの簡単なクラス
-class HappyPublisher(Node):
+class HappySubscriber(Node):
     def __init__(self):  # コンストラクタ
         super().__init__('happy_subscriber_node')
         # サブスクライバの生成
