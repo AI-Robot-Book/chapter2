@@ -17,7 +17,7 @@ class HappySubscriber(Node):
 
 def main(args=None):  # main¢p
     rclpy.init()
-    node = HappyPublisher()
+    node = HappySubscriber()
     try:
         rclpy.spin(node)
     except KeyboardInterrupt:
