@@ -54,4 +54,7 @@ Chapter2の全パッケージを以下のコマンドでインストールしま
 
 
 
-## 補足情報
+## バグ情報
+- Dockerコンテナのhappy_topicパッケージにバグがありました．happy_topic/happy_topic/happy_subscriber.pyの以下の行を次のように変更してください．なお，githubのコードは修正済みです．
+  - 7行目：　誤　class HappyPublisher(Node):　正　class HappySubscriber(Node):　　
+  - 20行目： 誤　node = HappyPublisher()     　正　noe = HappySubscriber():　
