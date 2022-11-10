@@ -34,6 +34,12 @@ ROS2とPythonで作って学ぶAIロボット入門（出村・萩原・升谷�
 - プログラムリスト2.16 [package.xml](https://github.com/AI-Robot-Book/chapter2/blob/master/airobot_interfaces/package.xml)
 - プログラムリスト2.17 [setup.py](https://github.com/AI-Robot-Book/chapter2/blob/master/bringme_service/setup.py)
 
+## 実演動画一覧  
+- [チャレンジ2.4 (p.50)] (https://youtu.be/Vmu8w7EW-7U)  
+- [チャレンジ2.5 (p.53)] (https://youtu.be/hsBdCBVgmQY)  
+- [チャレンジ2.6 (p.53)] (https://youtu.be/qHmzS2akfng)  
+
+
 ## インストール
 Chapter2の全パッケージを以下のコマンドでインストールします．
 - ROSのワークスペースを`~/airobot_ws`とする．
