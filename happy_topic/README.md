@@ -30,6 +30,7 @@ ros2 run happy_topic happy_publisher_node
 
 
 ## 履歴
+- 2022-11-08: happy_subscriber_node.pyのノード名が間違っていたので，それに伴う7行と20行の変更．
 - 2022-08-29: 初期版
 
 
