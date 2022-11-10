@@ -4,7 +4,11 @@
 - happy_topic/happy_publisher_node.py  (プログラムリスト2.7)
 - happy_topic/happy_subscriber_node.py (プログラムリスト2.8)
 
-
+## バグ情報
+- Dockerコンテナのhappy_topicパッケージにバグがありました．happy_topic/happy_topic/happy_subscriber.pyの以下の行を次のように変更してください．なお，githubのコードは修正済みです．
+  - 7行目：　誤　class HappyPublisher(Node):　正　class HappySubscriber(Node):　　
+  - 20行目： 誤　node = HappyPublisher()      正　node = HappySubscriber():　
+  
 ## インストール
 Chapter2のパッケージは全部まとめてインストール・ビルドをします．
 - [第2章 インストール](https://github.com/AI-Robot-Book/chapter2)を参照してください．
