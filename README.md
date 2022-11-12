@@ -37,7 +37,9 @@ ROS2とPythonで作って学ぶAIロボット入門（出村・萩原・升谷�
 ## 実演動画一覧  
 - [チャレンジ2.4 (p.50)] (https://youtu.be/Vmu8w7EW-7U)  
 - [チャレンジ2.5 (p.53)] (https://youtu.be/hsBdCBVgmQY)  
-- [チャレンジ2.6 (p.53)] (https://youtu.be/qHmzS2akfng)  
+- [チャレンジ2.6 (p.53)] (https://youtu.be/p6whfw_g6TU)  
+- [チャレンジ2.7 (p.56)] (https://youtu.be/sV9rLgRLK1Q)  
+- [チャレンジ2.8 (p.59)] (https://youtu.be/Y4eyENWhwH0)  
 
 
 ## インストール
