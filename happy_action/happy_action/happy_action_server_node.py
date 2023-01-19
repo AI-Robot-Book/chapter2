@@ -29,7 +29,7 @@ class HappyActionServer(Node):
         feedback_msg.remaining_time = random.randrange(1,10)
 
         no = goal_handle.request.action_no
-        self.get_logger().info(f'ゴールを受信：[{no}番] {self.happy_action[no]}')   
+        self.get_logger().info(f'ゴールを受信：[{no}番] {self.happy_actions[no]}')   
 
         
         while True:
